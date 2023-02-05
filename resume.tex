@@ -1,0 +1,80 @@
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1cm, top=.5cm, right=1cm, bottom=1cm, footskip=.3cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Atharva}{Shah}
+\position{Software Engineer{\enskip\cdotp\enskip}Python Expert}
+\address{Pune, IN}
+
+\email{HighnessAtharva}
+\homepage{https://highnessatharva.github.io/}
+\github{HighnessAtharva} 
+% \linkedin{https://www.linkedin.com/in/atharva-shah-5873a2111/}*/
+
+\quote{``Results‑driven software engineer skilled in Python, REST APIs, full‑stack development, databases, CLI tools, DevOps, and diverse Python libraries. Expert in Full-Stack Django/API development with a flair in data science, utilizing modern tech stacks to drive organizational success. Passionate about innovation and delivering cutting‑edge technology for a significant impact in the field of computer science."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Atharva Shah~~~·~~~Résumé}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{resume/experience.tex}
+\input{resume/honors.tex}
+\input{resume/education.tex}
+\input{resume/projects.tex}
+\input{resume/certification.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
